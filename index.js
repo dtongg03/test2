@@ -4,7 +4,7 @@ const simpleGit = require('simple-git');
 const file = './data.json';
 
 const isValidDate = (date) => {
-    const startDate = moment('2019-01-01');
+    const startDate = moment('2023-01-01');
     const endDate = moment('2025-01-31');
     return date.isBetween(startDate, endDate, null, '[]');
 };
@@ -22,7 +22,7 @@ const makeCommits = async (n) => {
     for (let i = 0; i < n; i++) {
         const randomWeeks = Math.floor(Math.random() * (52 * 4));
         const randomDays = Math.floor(Math.random() * 7);
-        const randomDate = moment("2019-01-01")
+        const randomDate = moment("2023-01-01")
             .add(randomWeeks, 'weeks')
             .add(randomDays, 'days');
         
