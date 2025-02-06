@@ -1,7 +1,7 @@
 const jsonfile = require('jsonfile');
 const moment = require('moment');
 const simpleGit = require('simple-git');
-const file = './data.json';
+const file = './data2.json';
 
 const isValidDate = (date) => {
     const startDate = moment('2023-01-01');
@@ -37,4 +37,4 @@ const makeCommits = async (n) => {
     await git.push();
 };
 
-makeCommits(500);
+makeCommits(400);
